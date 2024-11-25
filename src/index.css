@@ -24,20 +24,17 @@ html, body {
 /* MENU ANIMATION */
 .menu-img {
   transition: all 0.3s ease-in-out;
-  position: relative;
   color: white;
 }
 
-/* Effet lumineux sur le texte lors du survol */
 .menu-img:hover {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.8), 
+               0 0 30px rgba(255, 255, 255, 0.8);
   filter: brightness(1.5);
 }
 
-
-
-
-/* index.css ou un autre fichier global */
+/* Page welcome */
 @keyframes blink {
   0% {
     opacity: 1;

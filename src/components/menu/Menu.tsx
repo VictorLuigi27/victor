@@ -1,59 +1,53 @@
 import { Link } from "react-router-dom";
 
 export default function Menu() {
-    return (
-      <div className="bg-black min-h-screen no-scroll">
-          {/* Le reste du contenu */}
-          <div className="flex items-center justify-between relative">
-
-              <div 
-                className="relative menu-img"
-                style={{ position: 'relative', top: '44.5vh', left: '20vw' }}
-              >
-                <Link to='/experiences'>
-                    <p className="text-white text-4xl font-almendra">
-                        Expériences
-                    </p>
-                </Link>
-                <Link to='/formations'>
-                    <p className="text-white text-4xl font-almendra">
-                        Formations
-                    </p>
-                </Link>
-              </div>
-        
-                <Link to='/projets'>
-                    <p className="text-white text-4xl font-almendra menu-img" style={{ position: 'relative', top: '44.5vh', right: '24vw' }}>
-                        Projets
-                    </p>
-                </Link>
-
-          </div>
-  
-          {/* space between */}
-          <div className="relative">
-
-            <Link to='/competences'>
-                <p className="text-white text-4xl font-almendra menu-img" style={{ position: 'relative', left: '44vw' }}>
-                    Compétences
-                </p>
-            </Link>
-              
-            <Link to='/contact'>
-                <p className="text-white text-4xl font-almendra menu-img" style={{ position: 'relative', top: '70vh', left: '46.2vw' }}>
-                    Contact
-                </p>
-            </Link>
-              
-          </div>
-          
-          <img 
-            className="items-center justify-center mx-auto w-[35rem]"
-            src="./public/menu.svg" 
-            alt="modal-menu" 
-          />
+  return (
+    <div className="fixed top-0 left-0 w-full h-full z-[9998] bg-black bg-opacity-80">
+      {/* Section gauche */}
+      <div className="absolute top-[46vh] left-[20vw] menu-img">
+        <Link to="/experiences-formations">
+          <p className="text-white text-4xl font-almendra">
+            Expériences
+          </p>
+          <p className="text-white text-4xl font-almendra">
+            Formations
+          </p>
+        </Link>
       </div>
-    );
-  }
-  
-  
+
+      {/* Section droite */}
+      <div className="absolute top-[48.5vh] right-[24vw]">
+        <Link to="/projets">
+          <p className="text-white text-4xl font-almendra menu-img">
+            Projets
+          </p>
+        </Link>
+      </div>
+
+      {/* Section bas-gauche */}
+      <div className="absolute top-[11vh] left-[44vw]">
+        <Link to="/competences">
+          <p className="text-white text-4xl font-almendra menu-img">
+            Compétences
+          </p>
+        </Link>
+      </div>
+
+      {/* Section bas-droite */}
+      <div className="absolute top-[85vh] left-[46.2vw]">
+        <Link to="/contact">
+          <p className="text-white text-4xl font-almendra menu-img">
+            Contact
+          </p>
+        </Link>
+      </div>
+
+      {/* Image centrale */}
+      <img
+        className="absolute items-center justify-center mx-auto w-[35rem] top-[28rem] left-[35rem] transform -translate-y-1/2"
+        src="./public/menu.svg"
+        alt="modal-menu"
+      />
+    </div>
+  );
+}
