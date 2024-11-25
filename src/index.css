@@ -16,6 +16,18 @@ html, body {
   font-style: normal;
 }
 
+.Aliciawonderland {
+  font-family: "Aliciawonderland", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.BurtonsDreamsPro {
+  font-family: "BurtonsDreams", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* MENU SCROLL */
 .no-scroll {
   overflow: hidden;
@@ -34,6 +46,10 @@ html, body {
   filter: brightness(1.5);
 }
 
+.blink {
+  animation: blink 3s ease-in-out infinite;
+}
+
 /* Page welcome */
 @keyframes blink {
   0% {
@@ -47,6 +63,16 @@ html, body {
   }
 }
 
-.blink {
-  animation: blink 3s ease-in-out infinite;
+@font-face {
+  font-family: "Aliciawonderland";
+  src: url("/fonts/Aliciawonderland-ZoM8.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BurtonsDreams";
+  src: url("/fonts/BurtonsDreamsPro-R1rE.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }

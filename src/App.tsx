@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Welcome from './components/welcome/Welcome.tsx';
 import Contact from './components/contact/Contact.tsx'; 
 import Menu from './components/menu/Menu.tsx';
+import Competences from './components/competences/Competences.tsx';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/competences" element={<Competences />} />
         </Routes>
       </div>
     </Router>
