@@ -5,6 +5,7 @@ import Menu from './components/menu/Menu.tsx';
 import Competences from './components/competences/Competences.tsx';
 import { useEffect, useState } from 'react';
 import Parcours from './components/parcours/Parcours.tsx';
+import Profil from './components/profil/Profil.tsx';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,6 +42,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/competences" element={<Competences />} />
           <Route path="/experiences-formations" element={<Parcours />} />
+          <Route path="/mon-profil" element={<Profil />} />
         </Routes>
       </div>
     </Router>

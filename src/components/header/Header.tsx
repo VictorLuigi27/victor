@@ -12,7 +12,7 @@ export default function Header() {
 
       <h1 className="text-white text-6xl BurtonsDreamsPro">Victor</h1>
 
-      <Link to='/profil' className="relative group"> {/* Ajout de 'group' ici */}
+      <Link to='/mon-profil' className="relative group"> {/* Ajout de 'group' ici */}
         {/* L'image */}
         <img
           className="w-20 h-20"
