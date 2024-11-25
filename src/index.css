@@ -5,4 +5,35 @@
 
 html, body {
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.almendra-sc-regular {
+  font-family: "Almendra SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* index.css ou ton fichier CSS principal */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* index.css ou un autre fichier global */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 3s ease-in-out infinite;
 }

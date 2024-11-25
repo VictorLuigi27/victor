@@ -6,7 +6,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}", // C'est là où tu écris ton code React
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'almendra': ['"Almendra SC"', 'serif'],
+      },
+    },
   },
   plugins: [],
 }

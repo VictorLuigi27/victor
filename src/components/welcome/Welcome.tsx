@@ -1,12 +1,11 @@
 // src/components/Welcome.jsx
 function Welcome() {
     return (
-      <div className="text-center p-8">
-        <h1 className="text-4xl font-bold text-blue-600">Bienvenue sur mon portfolio !</h1>
-        <p className="mt-4 text-lg">Voici un aperçu de mes projets et de mes compétences.</p>
+      <div className="bg-black text-center p-[15rem] min-h-screen">
+        <h1 className="text-6xl text-white">Bienvenue sur mon portfolio</h1>
+        <h2 className="text-4xl text-white mt-[10rem] blink">Pour afficher le menu appuyer sur TAB</h2>
       </div>
     );
   }
   
   export default Welcome;
-  
