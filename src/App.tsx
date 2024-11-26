@@ -6,6 +6,7 @@ import Competences from './components/competences/Competences.tsx';
 import { useEffect, useState } from 'react';
 import Parcours from './components/parcours/Parcours.tsx';
 import Profil from './components/profil/Profil.tsx';
+import Projets from './components/projets/Projets.tsx';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,6 +44,7 @@ function App() {
           <Route path="/competences" element={<Competences />} />
           <Route path="/experiences-formations" element={<Parcours />} />
           <Route path="/mon-profil" element={<Profil />} />
+          <Route path="/projets" element={<Projets />} />
         </Routes>
       </div>
     </Router>
