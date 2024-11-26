@@ -56,11 +56,11 @@ export default function Menu({ onClose }: MenuProps) {
       </div>
 
       {/* Image centrale */}
-      <img
-        className="absolute items-center justify-center mx-auto w-[15rem] lg:w-[35rem] top-[30rem] lg:top-[28rem] left-[6.7rem] lg:left-[35rem] transform -translate-y-1/2"
-        src="/menu.svg"
-        alt="modal-menu"
-      />
+    <img
+      className="absolute mx-auto w-[15rem] lg:w-[35rem] top-[51.5%] lg:top-[50%] left-[25%] lg:left-[35%] transform -translate-y-1/2"
+      src="/menu.svg"
+      alt="modal-menu"
+    />
     </div>
   );
 }
