@@ -7,6 +7,7 @@ import Competences from './components/competences/Competences.tsx';
 import Parcours from './components/parcours/Parcours.tsx';
 import Profil from './components/profil/Profil.tsx';
 import Projets from './components/projets/Projets.tsx';
+import { FaPlay, FaPause, FaBars } from "react-icons/fa";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,6 +31,10 @@ function App() {
     }
   };
 
+  const handleMenuToggle = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress);
 
@@ -41,15 +46,20 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen">
-        {/* Bouton pour démarrer ou mettre en pause la musique, positionné en bas à gauche */}
+
+        {/* Bouton de lecture / pause */}
         <button 
           onClick={handlePlayPauseMusic} 
-          className="fixed bottom-4 left-4 p-4 bg-gray-500 text-white rounded z-50"
+          className="fixed bottom-[2vh] left-[39vh] lg:left-[5vh] lg:bottom-[5vh] p-3 lg:p-5 bg-gray-800 text-white rounded-full z-50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg transform hover:rotate-[15deg]"
         >
-          {audioPaused ? "Play Music" : "Pause Music"}
+          {audioPaused ? (
+            <FaPlay className="text-2xl" />
+          ) : (
+            <FaPause className="text-2xl" />
+          )}
         </button>
 
-        {/* Ajouter un lecteur audio pour la musique de fond, seulement après le clic */}
+        {/* Musique de fond */}
         {audioPlayed && (
           <audio autoPlay loop>
             <source src="/music/ClaudeDebussy.mp3" type="audio/mp3" />
@@ -57,13 +67,22 @@ function App() {
           </audio>
         )}
 
-        {/* Menu avec effet fade-in */}
+        {/* Bouton pour ouvrir le menu sur mobile */}
+        <button 
+          onClick={handleMenuToggle}
+          className="fixed top-5 left-5 lg:hidden p-3 bg-gray-800 text-white rounded-full z-50 flex items-center justify-center"
+        >
+          <FaBars className="text-2xl" />
+        </button>
+
+        {/* Menu (affiché seulement si `isMenuOpen` est vrai) */}
         {isMenuOpen && (
           <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 fade-in">
-            <Menu />
+            <Menu onClose={handleMenuToggle} /> {/* Ajout de la prop onClose ici */}
           </div>
         )}
 
+        {/* Routes */}
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/contact" element={<Contact />} />

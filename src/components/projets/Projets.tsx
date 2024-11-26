@@ -126,3 +126,5 @@ export default function Projets() {
     </div>
   );
 }
+
+// Mobile OK - Desktop OK

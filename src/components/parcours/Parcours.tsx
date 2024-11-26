@@ -116,3 +116,5 @@ export default function Parcours() {
     </div>
   );
 }
+
+// Mobile OK - Desktop OK
