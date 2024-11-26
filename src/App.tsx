@@ -10,33 +10,32 @@ import Projets from './components/projets/Projets.tsx';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-    // Fonction pour gérer l'appui sur la touche Tab
-    interface KeyPressEvent extends KeyboardEvent {
-      key: string;
+
+  // Fonction pour gérer l'appui sur la touche "M"
+  const handleKeyPress = (event: KeyboardEvent) => {
+    if (event.key === "m" || event.key === "M") {
+      setIsMenuOpen((prevState) => !prevState);
     }
+  };
 
-    const handleKeyPress = (event: KeyPressEvent) => {
-      if (event.key === "m" || event.key === "M") { 
-      setIsMenuOpen((prevState) => !prevState); 
-      }
+  // Ajouter l'événement keydown au montage du composant
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
     };
-  
-    // Ajouter l'événement keydown au montage du composant
-    useEffect(() => {
-      window.addEventListener('keydown', handleKeyPress);
-      
-      window.addEventListener('keydown', handleKeyPress);
+  }, []);
 
-      return () => {
-        window.removeEventListener('keydown', handleKeyPress);
-      };
-    }, []);
-    
   return (
     <Router>
       <div className="min-h-screen">
-        {isMenuOpen && <Menu />}
+        {/* Menu avec effet fade-in */}
+        {isMenuOpen && (
+          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 fade-in">
+            <Menu />
+          </div>
+        )}
 
         <Routes>
           <Route path="/" element={<Welcome />} />
@@ -52,5 +51,3 @@ function App() {
 }
 
 export default App;
-
-{/* <Route path="/menu" element={<Menu />} /> */}

@@ -52,6 +52,21 @@ html, body {
   filter: brightness(1.5);
 }
 
+/* Exemple pour un fade-in simple */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* WELCOME */
 .blink {
   animation: blink 3s ease-in-out infinite;
 }

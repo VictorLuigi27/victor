@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../header/Header";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const [currentSection, setCurrentSection] = useState("reseaux");
@@ -10,6 +11,12 @@ export default function Contact() {
       {/* Header reste fixe en haut */}
       <Header />
 
+      <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
       {/* Conteneur principal pour les sections */} 
       <div className="flex justify-center items-center mt-[10rem] relative">
         {/* Wrapper des deux sections (position horizontale) */}
@@ -82,6 +89,7 @@ export default function Contact() {
           →
         </button>
       </div>
+      </motion.div>
     </div>
   );
 }
