@@ -32,9 +32,10 @@ function App() {
       <div className="min-h-screen">
         {/* Ajouter un lecteur audio pour la musique de fond */}
         <audio autoPlay loop>
-          <source src="/ClaudeDebussy.mp3" type="audio/mp3" />
-          Votre navigateur ne supporte pas la lecture audio.
+          <source src="/path/to/ClaudeDebussy.mp3" type="audio/mp3" />
+          Votre navigateur ne prend pas en charge les éléments audio.
         </audio>
+
 
         {/* Menu avec effet fade-in */}
         {isMenuOpen && (
