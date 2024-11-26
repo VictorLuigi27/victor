@@ -14,7 +14,7 @@ export default function Contact() {
           
           {/* Section Réseaux avec l'icône et le texte en ligne */}
           <div className="flex flex-row items-center space-x-5 mb-6">
-            <p className="text-white text-2xl">Réseaux</p>
+            <p className="text-white text-3xl">Réseaux</p>
             <img 
               className="w-10 h-10"
               src="/public/social-network.svg"
@@ -26,12 +26,12 @@ export default function Contact() {
           <div className="flex flex-col items-center">
             <Link to="https://www.linkedin.com/in/victordiazpro/">
               <img 
-                className="w-16 h-16 mb-3"
+                className="w-22 h-22 mb-5"
                 src="/public/linkedin.svg" 
                 alt="Linkedin"
               />
             </Link>
-            <p className="text-white text-lg">Linkedin</p>
+            <p className="text-white text-2xl">Linkedin</p>
           </div>
         </div>
       </div>
