@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Header from "../header/Header";
 
 export default function Competences() {
@@ -9,7 +10,12 @@ export default function Competences() {
       <div className="grid grid-cols-4 gap-14 ml-[10rem] mt-[7rem]">
         
         {/* Compétences */}
-        <div className="relative group">
+        <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
             src="/public/html-comp.svg"
@@ -18,9 +24,14 @@ export default function Competences() {
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
             HTML
           </span>
-        </div>
+        </motion.div>
 
-        <div className="relative group">
+        <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
             src="/public/css-comp.svg"
@@ -29,9 +40,14 @@ export default function Competences() {
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
             CSS
           </span>
-        </div>
+        </motion.div>
 
-        <div className="relative group">
+        <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
             src="/public/javascript-comp.svg"
@@ -40,9 +56,14 @@ export default function Competences() {
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
             JavaScript
           </span>
-        </div>
+        </motion.div>
 
-        <div className="relative group">
+        <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
             src="/public/react-comp.svg"
@@ -51,9 +72,14 @@ export default function Competences() {
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
             React
           </span>
-        </div>
+        </motion.div>
 
-        <div className="relative group">
+        <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
             src="/public/mongo-comp.svg"
@@ -62,9 +88,14 @@ export default function Competences() {
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
             MongoDB
           </span>
-        </div>
+        </motion.div>
 
-        <div className="relative group">
+        <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
             src="/public/express-comp.svg"
@@ -73,9 +104,14 @@ export default function Competences() {
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
             Express
           </span>
-        </div>
+        </motion.div>
 
-        <div className="relative group">
+        <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
             src="/public/node-comp.svg"
@@ -84,9 +120,14 @@ export default function Competences() {
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
             Node.js
           </span>
-        </div>
+        </motion.div>
 
-        <div className="relative group">
+        <motion.div
+          className="relative group"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+        >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
             src="/public/figma-comp.svg"
@@ -95,8 +136,7 @@ export default function Competences() {
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
             Figma
           </span>
-        </div>
-
+        </motion.div>
       </div>
     </div>
   );
