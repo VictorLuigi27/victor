@@ -45,7 +45,7 @@ export default function Menu() {
       {/* Image centrale */}
       <img
         className="absolute items-center justify-center mx-auto w-[35rem] top-[28rem] left-[35rem] transform -translate-y-1/2"
-        src="./public/menu.svg"
+        src="/public/menu.svg"
         alt="modal-menu"
       />
     </div>
