@@ -35,7 +35,30 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+    <div className="flex justify-center items-center mt-[10rem]">
+        <div className="bg-neutral-900 p-10 rounded-lg w-[400px] h-[400px] flex flex-col items-center justify-between">
+            <div className="flex flex-row items-center space-x-5 mb-6">
+                <p className="text-white text-3xl">Contact</p>
+                <img 
+                  className="w-10 h-10"
+                  src="/public/contact.svg"
+                  alt="contact"
+                />
+            </div>
+
+            <div className="flex flex-col items-center">
+              <Link to="https://www.linkedin.com/in/victordiazpro/">
+                <img 
+                  className="w-[12rem] mb-5"
+                  src="/public/gmail-icon.svg" 
+                  alt="Gmail"
+                />
+              </Link>
+              <p className="text-white text-2xl">Gmail</p>
+            </div>
+        </div>
+      </div>
     </div>
   );
 }
-
