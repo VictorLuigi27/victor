@@ -30,6 +30,12 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen">
+        {/* Ajouter un lecteur audio pour la musique de fond */}
+        <audio autoPlay loop>
+          <source src="/ClaudeDebussy.mp3" type="audio/mp3" />
+          Votre navigateur ne supporte pas la lecture audio.
+        </audio>
+
         {/* Menu avec effet fade-in */}
         {isMenuOpen && (
           <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 z-50 fade-in">
