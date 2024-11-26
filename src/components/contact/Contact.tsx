@@ -27,7 +27,7 @@ export default function Contact() {
               <p className="text-white text-3xl">Réseaux</p>
               <img
                 className="w-10 h-10"
-                src="/public/social-network.svg"
+                src="/social-network.svg"
                 alt="réseaux"
               />
             </div>
@@ -35,7 +35,7 @@ export default function Contact() {
               <Link to="https://www.linkedin.com/in/victordiazpro/">
                 <img
                   className="w-22 h-22 mb-5"
-                  src="/public/linkedin.svg"
+                  src="/linkedin.svg"
                   alt="Linkedin"
                 />
               </Link>
@@ -49,7 +49,7 @@ export default function Contact() {
               <p className="text-white text-3xl">Contact</p>
               <img
                 className="w-10 h-10"
-                src="/public/contact.svg"
+                src="/contact.svg"
                 alt="contact"
               />
             </div>
@@ -57,7 +57,7 @@ export default function Contact() {
               <Link to="mailto:victorpro66@gmail.com">
                 <img
                   className="w-[12rem] mb-5"
-                  src="/public/gmail-icon.svg"
+                  src="/gmail-icon.svg"
                   alt="Gmail"
                 />
               </Link>

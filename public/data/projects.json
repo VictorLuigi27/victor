@@ -2,46 +2,46 @@
   {
     "id": 1,
     "title": "Portfolio",
-    "picture": "/public/logoPunk.svg",
+    "picture": "/logoPunk.svg",
     "description": "Ce portfolio incarne bien plus qu'un simple projet. Il reflète une facette de ma personnalité et témoigne de l'évolution de mes compétences en développement web et en design UX/UI.",
     "technologies": ["React", "TailwindCSS"],
     "site": "TailwindCSS",
-    "demo": "/public/portfolio.gif"
+    "demo": "/portfolio.gif"
   },
   {
     "id": 2,
     "title": "Electronica",
-    "picture": "/public/heart.svg",
+    "picture": "/heart.svg",
     "description": "Ce Lecteur de musique contient des musiques du genre Electro par des artistes passionnés.",
     "technologies": ["React", "TailwindCSS"],
     "site": "https://electronica-eight.vercel.app/",
-    "demo": "/public/electronica.gif"
+    "demo": "/electronica.gif"
   },
   {
     "id": 3,
     "title": "To do List",
-    "picture": "/public/list.svg",
+    "picture": "/list.svg",
     "description": "Petite todolist pour s'organiser.",
     "technologies": ["React", "TailwindCSS"],
     "site": "https://todo-list-five-navy-80.vercel.app/",
-    "demo": "/public/todolist.gif"
+    "demo": "/todolist.gif"
   },
   {
     "id": 4,
     "title": "Chapristi",
-    "picture": "/public/cat.svg",
+    "picture": "/cat.svg",
     "description": "Si vous voulez collectionner des photos de chats, c'est ici que ça se passe.",
     "technologies": ["React", "TailwindCSS"],
     "site": "https://chapristi.vercel.app/",
-    "demo": "/public/chapristi.gif"
+    "demo": "/chapristi.gif"
   },
   {
     "id": 5,
     "title": "???",
-    "picture": "/public/mystery.svg",
+    "picture": "/mystery.svg",
     "description": "Projet à venir...",
     "technologies": ["Inconnu"],
     "site": "Inconnu",
-    "demo": "/public/mystere.gif"
+    "demo": "/mystere.gif"
   }
 ]

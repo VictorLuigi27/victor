@@ -15,7 +15,7 @@ export default function Profil() {
           <div className="flex flex-row items-center gap-6 mb-8">
             <motion.img 
               className="w-[15rem] h-[15rem] rounded-full"
-              src="/public/photo-profil.jpg" 
+              src="/photo-profil.jpg" 
               alt="Photo de profil" 
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -68,7 +68,7 @@ export default function Profil() {
             <span className="text-white text-3xl">The Last Of Us</span>
             <img 
               className="w-12 h-12"
-              src="/public/lastof-icon.svg" 
+              src="/lastof-icon.svg" 
               alt="The Last of Us" 
             />
           </motion.li>
@@ -82,7 +82,7 @@ export default function Profil() {
             <span className="text-white text-3xl">Skyrim</span>
             <img 
               className="w-12 h-12"
-              src="/public/dragon-icon.svg" 
+              src="/dragon-icon.svg" 
               alt="Skyrim" 
             />
           </motion.li>
@@ -96,7 +96,7 @@ export default function Profil() {
             <span className="text-white text-3xl">Alice: Madness Returns</span>
             <img 
               className="w-12 h-12"
-              src="/public/alice-icon.svg" 
+              src="/alice-icon.svg" 
               alt="Alice: Madness Returns" 
             />
           </motion.li>
@@ -110,7 +110,7 @@ export default function Profil() {
             <span className="text-white text-3xl">Mindcop</span>
             <img 
               className="w-12 h-12"
-              src="/public/mindcop-icon.svg" 
+              src="/mindcop-icon.svg" 
               alt="Mindcop" 
             />
           </motion.li>

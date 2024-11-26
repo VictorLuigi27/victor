@@ -18,7 +18,7 @@ export default function Competences() {
         >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
-            src="/public/html-comp.svg"
+            src="/html-comp.svg"
             alt="html"
           />
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
@@ -34,7 +34,7 @@ export default function Competences() {
         >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
-            src="/public/css-comp.svg"
+            src="/css-comp.svg"
             alt="css"
           />
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
@@ -50,7 +50,7 @@ export default function Competences() {
         >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
-            src="/public/javascript-comp.svg"
+            src="/javascript-comp.svg"
             alt="javascript"
           />
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
@@ -66,7 +66,7 @@ export default function Competences() {
         >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
-            src="/public/react-comp.svg"
+            src="/react-comp.svg"
             alt="react"
           />
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
@@ -82,7 +82,7 @@ export default function Competences() {
         >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
-            src="/public/mongo-comp.svg"
+            src="/mongo-comp.svg"
             alt="mongodb"
           />
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
@@ -98,7 +98,7 @@ export default function Competences() {
         >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
-            src="/public/express-comp.svg"
+            src="/express-comp.svg"
             alt="express"
           />
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
@@ -114,7 +114,7 @@ export default function Competences() {
         >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
-            src="/public/node-comp.svg"
+            src="/node-comp.svg"
             alt="node"
           />
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">
@@ -130,7 +130,7 @@ export default function Competences() {
         >
           <img
             className="w-[10rem] h-[10rem] transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-15px]"
-            src="/public/figma-comp.svg"
+            src="/figma-comp.svg"
             alt="figma"
           />
           <span className="absolute left-20 bottom-[-1.5rem] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xl transform -translate-x-1/2 text-center">

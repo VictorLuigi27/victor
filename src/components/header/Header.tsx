@@ -6,7 +6,7 @@ export default function Header() {
       
       <img 
         className="w-20 h-20"
-        src="/public/logoPunk.svg" 
+        src="/logoPunk.svg" 
         alt="Logo Site" 
       />
 
@@ -16,7 +16,7 @@ export default function Header() {
         {/* L'image */}
         <img
           className="w-20 h-20"
-          src="/public/logoProfil.svg"
+          src="/logoProfil.svg"
           alt="Profil"
         />
         

@@ -32,7 +32,7 @@ function App() {
       <div className="min-h-screen">
         {/* Ajouter un lecteur audio pour la musique de fond */}
         <audio autoPlay loop>
-          <source src="/public/ClaudeDebussy.mp3" type="audio/mp3" />
+          <source src="/music/ClaudeDebussy.mp3" type="audio/mp3" />
           Votre navigateur ne prend pas en charge les éléments audio.
         </audio>
 
