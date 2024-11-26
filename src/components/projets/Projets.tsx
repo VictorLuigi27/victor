@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion"; // Importer motion
 import Header from "../header/Header";
 
 export default function Projets() {
@@ -15,7 +16,6 @@ export default function Projets() {
   const [projectsData, setProjectsData] = useState<Project[]>([]);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
-  // Fonction pour récupérer les projets depuis le fichier JSON
   useEffect(() => {
     fetch("/data/projects.json") // Chemin corrigé
       .then((response) => response.json())
@@ -26,14 +26,11 @@ export default function Projets() {
       .catch((error) => console.error("Erreur de chargement des projets : ", error));
   }, []);
 
-  // Fonction pour fermer la fenêtre du projet
   const closeProject = () => {
-    setSelectedProject(null); // Ferme le modal en réinitialisant l'état du projet sélectionné
+    setSelectedProject(null);
   };
 
-  // Fonction pour gérer le clic en dehors du modal
   const handleModalClick = (e: React.MouseEvent) => {
-    // Si on clique en dehors du contenu du modal, on ferme le modal
     if ((e.target as HTMLElement).classList.contains("modal-overlay")) {
       closeProject();
     }
@@ -51,12 +48,14 @@ export default function Projets() {
             <p className="text-white">Chargement des projets...</p>
           ) : (
             projectsData.map((project) => (
-              <div
+              <motion.div
                 key={project.id}
                 className="relative bg-neutral-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 cursor-pointer"
-                onClick={() => setSelectedProject(project.id)} // Déclenche l'ouverture du projet
+                onClick={() => setSelectedProject(project.id)}
+                initial={{ opacity: 0, y: 20 }} // Initialisation de l'animation (invisible et décalé vers le bas)
+                animate={{ opacity: 1, y: 0 }} // Animation vers l'opacité normale et position initiale
+                transition={{ duration: 0.5 }} // Durée de l'animation
               >
-                {/* Image et titre du projet */}
                 <div className="h-[50%] flex items-center justify-center bg-neutral-700">
                   <img
                     src={project.picture}
@@ -68,19 +67,27 @@ export default function Projets() {
                   <h3 className="text-white text-xl font-bold">{project.title}</h3>
                   <p className="text-gray-400 mt-2 truncate">{project.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))
           )}
         </div>
       </div>
 
-      {/* Modal (fenêtre pop-up) avec les détails du projet */}
+      {/* Modal avec animation d'apparition */}
       {selectedProject !== null && (
-        <div
+        <motion.div
           className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-30 modal-overlay"
-          onClick={handleModalClick} // Gère le clic en dehors du modal
+          onClick={handleModalClick}
+          initial={{ opacity: 0 }} // Modal initialement invisible
+          animate={{ opacity: 1 }} // Le modal devient visible
+          transition={{ duration: 0.5 }} // Durée de l'animation
         >
-          <div className="bg-neutral-800 text-white p-8 rounded-lg w-11/12 sm:w-9/12 md:w-7/12">
+          <motion.div
+            className="bg-neutral-800 text-white p-8 rounded-lg w-11/12 sm:w-9/12 md:w-7/12"
+            initial={{ scale: 0.8 }} // Modal commence plus petit
+            animate={{ scale: 1 }} // Modal devient sa taille normale
+            transition={{ duration: 0.3 }} // Durée de l'animation du zoom
+          >
             {projectsData
               .filter((project) => project.id === selectedProject)
               .map((project) => (
@@ -103,7 +110,6 @@ export default function Projets() {
                       </a>
                     </div>
 
-                    {/* Affichage du GIF dans le modal */}
                     <div className="mt-4">
                       <img
                         src={project.demo}
@@ -114,8 +120,8 @@ export default function Projets() {
                   </div>
                 </div>
               ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </div>
   );
