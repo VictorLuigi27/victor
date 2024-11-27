@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // Assure-toi d'importer Link si tu utilises React Router
 
 export default function Profil() {
   return (
@@ -63,7 +64,7 @@ export default function Profil() {
 
         <ul className="space-y-4">
           <motion.li
-            className="bg-neutral-600 rounded-md flex items-center p-2 w-[80%] space-x-4 mx-auto lg:p-4 lg:space-x-10"  // Ajuste la largeur ici
+            className="bg-neutral-600 rounded-md flex items-center p-2 w-[80%] space-x-4 mx-auto lg:p-4 lg:space-x-10"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -77,7 +78,7 @@ export default function Profil() {
           </motion.li>
 
           <motion.li
-            className="bg-neutral-600 rounded-md flex items-center p-2 w-[80%] space-x-4 mx-auto lg:p-4 lg:space-x-10"  // Ajuste la largeur ici
+            className="bg-neutral-600 rounded-md flex items-center p-2 w-[80%] space-x-4 mx-auto lg:p-4 lg:space-x-10"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -91,7 +92,7 @@ export default function Profil() {
           </motion.li>
 
           <motion.li
-            className="bg-neutral-600 rounded-md flex items-center p-2 w-[80%] space-x-4 mx-auto lg:p-4 lg:space-x-10"  // Ajuste la largeur ici
+            className="bg-neutral-600 rounded-md flex items-center p-2 w-[80%] space-x-4 mx-auto lg:p-4 lg:space-x-10"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -105,7 +106,7 @@ export default function Profil() {
           </motion.li>
 
           <motion.li
-            className="bg-neutral-600 rounded-md flex items-center p-2 w-[80%] space-x-4 mx-auto lg:p-4 lg:space-x-10"  // Ajuste la largeur ici
+            className="bg-neutral-600 rounded-md flex items-center p-2 w-[80%] space-x-4 mx-auto lg:p-4 lg:space-x-10"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -118,9 +119,20 @@ export default function Profil() {
             />
           </motion.li>
         </ul>
+        
+        {/* Bouton vers les mentions légales */}
+        <div className="mt-8 text-center">
+          <Link 
+            to="/mentions-legales"  // Remplace par l'URL correcte de ta page Mentions Légales
+            className="text-white text-sm underline hover:text-gray-400 transition-colors"
+          >
+            Mentions légales
+          </Link>
+        </div>
       </motion.div>
     </div>
   );
 }
+
 
 // Mobile OK - Desktop OK 

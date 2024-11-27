@@ -8,6 +8,7 @@ import Parcours from './components/parcours/Parcours.tsx';
 import Profil from './components/profil/Profil.tsx';
 import Projets from './components/projets/Projets.tsx';
 import { FaPlay, FaPause, FaBars } from "react-icons/fa";
+import Mentions from './components/mentions/Mentions.tsx';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -90,6 +91,7 @@ function App() {
           <Route path="/experiences-formations" element={<Parcours />} />
           <Route path="/mon-profil" element={<Profil />} />
           <Route path="/projets" element={<Projets />} />
+          <Route path="/mentions-legales" element={<Mentions />} />
         </Routes>
       </div>
     </Router>
