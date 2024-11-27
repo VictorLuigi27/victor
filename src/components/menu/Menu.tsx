@@ -16,54 +16,59 @@ export default function Menu({ onClose }: MenuProps) {
         <FaTimes className="text-3xl" />
       </button>
 
-      {/* Section gauche */}
-      <div className="absolute top-[49.3vh] left-[3.5vw] lg:top-[46vh] lg:left-[20vw] menu-img">
-        <Link to="/experiences-formations">
-          <p className="text-white text-sm lg:text-4xl font-almendra">
-            Expériences
-          </p>
-          <p className="text-white text-sm lg:text-4xl font-almendra">
-            Formations
-          </p>
-        </Link>
-      </div>
+      {/* Menu principal */}
+      <div className="relative flex flex-col justify-center items-center h-full">
 
-      {/* Section droite */}
-      <div className="absolute top-[50.4vh] right-[3.5vw] lg:top-[48.5vh] lg:right-[24vw]">
-        <Link to="/projets">
-          <p className="text-white text-sm lg:text-4xl font-almendra menu-img">
-            Projets
-          </p>
-        </Link>
-      </div>
+        {/* Section Expériences / Formations (gauche) */}
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 lg:ml-48">
+          <Link to="/experiences-formations">
+            <p className="text-white text-sm lg:text-4xl font-almendra">
+              Expériences
+            </p>
+          </Link>
+          <Link to="/experiences-formations">
+            <p className="text-white text-sm lg:text-4xl font-almendra">
+              Formations
+            </p>
+          </Link>
+        </div>
 
-      {/* Section bas-gauche */}
-      <div className="absolute top-[35vh] left-[44vw] lg:top-[11vh] lg:left-[44vw]">
-        <Link to="/competences">
-          <p className="text-white text-sm lg:text-4xl font-almendra menu-img">
-            Compétences
-          </p>
-        </Link>
-      </div>
+        {/* Image centrale */}
+        <img
+          className="absolute w-[15rem] lg:w-[35rem] top-1/2 transform -translate-y-1/2"
+          src="/menu.svg"
+          alt="modal-menu"
+        />
 
-      {/* Section bas-droite */}
-      <div className="absolute top-[66vh] left-[47vw] lg:top-[85vh] lg:left-[46.2vw]">
-        <Link to="/contact">
-          <p className="text-white text-sm lg:text-4xl font-almendra menu-img">
-            Contact
-          </p>
-        </Link>
-      </div>
+        {/* Section Projets (droite) */}
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 lg:mr-60">
+          <Link to="/projets">
+            <p className="text-white text-sm lg:text-4xl font-almendra">
+              Projets
+            </p>
+          </Link>
+        </div>
 
-      {/* Image centrale */}
-    <img
-      className="absolute mx-auto w-[15rem] lg:w-[35rem] top-[51.5%] lg:top-[50%] left-[25%] lg:left-[35%] transform -translate-y-1/2"
-      src="/menu.svg"
-      alt="modal-menu"
-    />
+        {/* Section Compétences (haut) */}
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 px-4 mt-72 lg:mt-12">
+          <Link to="/competences">
+            <p className="text-white text-sm lg:text-4xl font-almendra">
+              Compétences
+            </p>
+          </Link>
+        </div>
+
+        {/* Section Contact (bas) */}
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 px-4 mb-72 lg:mb-12">
+          <Link to="/contact">
+            <p className="text-white text-sm lg:text-4xl font-almendra">
+              Contact
+            </p>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
-
 
 // Mobile OK - Desktop OK
