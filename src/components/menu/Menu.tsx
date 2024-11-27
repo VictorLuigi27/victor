@@ -20,7 +20,7 @@ export default function Menu({ onClose }: MenuProps) {
       <div className="relative flex flex-col justify-center items-center h-full">
 
         {/* Section Expériences / Formations (gauche) */}
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 lg:ml-48">
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 lg:ml-48 menu-img">
           <Link to="/experiences-formations">
             <p className="text-white text-sm lg:text-4xl font-almendra">
               Expériences
@@ -43,7 +43,7 @@ export default function Menu({ onClose }: MenuProps) {
         {/* Section Projets (droite) */}
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 lg:mr-60">
           <Link to="/projets">
-            <p className="text-white text-sm lg:text-4xl font-almendra">
+            <p className="text-white text-sm lg:text-4xl font-almendra menu-img">
               Projets
             </p>
           </Link>
@@ -52,7 +52,7 @@ export default function Menu({ onClose }: MenuProps) {
         {/* Section Compétences (haut) */}
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 px-4 mt-72 lg:mt-12">
           <Link to="/competences">
-            <p className="text-white text-sm lg:text-4xl font-almendra">
+            <p className="text-white text-sm lg:text-4xl font-almendra menu-img">
               Compétences
             </p>
           </Link>
@@ -61,7 +61,7 @@ export default function Menu({ onClose }: MenuProps) {
         {/* Section Contact (bas) */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 px-4 mb-72 lg:mb-12">
           <Link to="/contact">
-            <p className="text-white text-sm lg:text-4xl font-almendra">
+            <p className="text-white text-sm lg:text-4xl font-almendra menu-img">
               Contact
             </p>
           </Link>
