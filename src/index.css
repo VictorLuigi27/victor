@@ -43,6 +43,7 @@ html, body {
 .menu-img {
   transition: all 0.3s ease-in-out;
   color: white;
+  cursor: pointer;
 }
 
 .menu-img:hover {
