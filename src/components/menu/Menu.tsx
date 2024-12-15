@@ -60,7 +60,11 @@ export default function Menu({ onClose }: MenuProps) {
 
         {/* Section Contact (bas) */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 px-4 mb-72 lg:mb-12">
-        <Link to="/contact" className="relative z-[100]">
+        <Link 
+        to="/contact" 
+        className="relative z-[9999]"
+        onClick={() => console.log('Contact clicked!')}
+        >
           <p className="text-white text-sm lg:text-4xl font-almendra menu-img">
             Contact
           </p>
