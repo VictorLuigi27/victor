@@ -73,8 +73,10 @@ export default function Parcours() {
                 <h3 className="text-xl font-semibold mb-3">Développeur web et web mobile</h3>
                 <p>StartWorkUp - Full remote | Novembre 2024 – Décembre 2024</p>
                 <p className="mt-2">Technologies front-end : ReactJs</p>
-                <p>Technologie back-end : Node.js</p>
-                <p>Base de données : MongoDB</p>
+                <p>Technologie back-end : PHP, Node.js, Python</p>
+                <p>Frameworks : Tailwind CSS, Boostrap</p>
+                <p>Librairies : jQuery, Moment.js</p>
+                <p>Base de données : MongoDB, MySQL, PostgreSQL</p>
                 <p>Système de gestion de versions : Git</p>
               </div>
             </div>
