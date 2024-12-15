@@ -44,6 +44,7 @@ html, body {
   transition: all 0.3s ease-in-out;
   color: white;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .menu-img:hover {
