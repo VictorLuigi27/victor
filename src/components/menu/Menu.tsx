@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa"; // Import de l'icône croix
 
 interface MenuProps {
@@ -6,13 +6,6 @@ interface MenuProps {
 }
 
 export default function Menu({ onClose }: MenuProps) {
-  const navigate = useNavigate();
-
-  const handleContactClick = () => {
-    console.log("Lien Contact cliqué!");
-    navigate("/contact");
-  };
-
   return (
     <div className="fixed top-0 left-0 w-full h-full z-[9998] bg-black bg-opacity-80">
       {/* Bouton de fermeture */}
@@ -67,14 +60,12 @@ export default function Menu({ onClose }: MenuProps) {
 
         {/* Section Contact (bas) */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 px-4 mb-72 lg:mb-12">
-          <button
-            onClick={handleContactClick}
-            className="text-white text-sm lg:text-4xl font-almendra menu-img"
-          >
+        <Link to="/contact" onClick={() => console.log("Lien Contact cliqué!")}>
+          <p className="text-white text-sm lg:text-4xl font-almendra menu-img">
             Contact
-          </button>
+          </p>
+        </Link>
         </div>
-
       </div>
     </div>
   );
