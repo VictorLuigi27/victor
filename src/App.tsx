@@ -86,7 +86,7 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contactez-moi" element={<Contact />} />
           <Route path="/competences" element={<Competences />} />
           <Route path="/experiences-formations" element={<Parcours />} />
           <Route path="/mon-profil" element={<Profil />} />
